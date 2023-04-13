@@ -2,11 +2,11 @@
   <header class="bg-light"><componentHeader/></header>
   <main>
     <section class="bg-dark"><componentMain1/></section>
-    <section class="bg-primary"><componentMain2/></section>
+    <section class="bg-primary p-2"><componentMain2/></section>
   </main>
   <footer>
     <section class="gi-bg"> <componentFooter1/></section>
-    <section class="bg-dark"> footer</section>
+    <section class="bg-dark text-light"> <componentFooter2/></section>
   </footer>
 
 </template>
@@ -16,12 +16,14 @@ import componentHeader from './components/componentHeader.vue';
 import componentMain1 from './components/componentMain1.vue';
 import componentMain2 from './components/componentMain2.vue';
 import componentFooter1 from './components/componentFooter1.vue';
+import componentFooter2 from './components/componentFooter2.vue';
   export default {
     components:{
       componentHeader,
       componentMain1,
       componentMain2,
       componentFooter1,
+      componentFooter2,
     }
   }
 </script>
@@ -29,8 +31,8 @@ import componentFooter1 from './components/componentFooter1.vue';
 <style lang="scss" scoped>
 .gi-bg{
   width: 100%;
-  height: 600px;
-  background-image: url(./assets/img/footer-bg.jpg);
+  height: 100%;
+  background-image: url(public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

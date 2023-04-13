@@ -4,7 +4,7 @@
       <div class="img-option">
         <img class="img-fluid d-block" :src="'public/img/' + option.path" :alt="option.alt">
       </div>
-      <span>{{ option.description }}</span>
+      <span class="text-uppercase">{{ option.description }}</span>
     </div>
 
 

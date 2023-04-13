@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 .gi-logo {
 
-    background-image: url(../assets/img/dc-logo-bg.png);
+    background-image: url(public/img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-size: fill;
     background-position: center;
@@ -77,4 +77,5 @@ export default {
 
 li {
     list-style: none;
-}</style>
+}
+</style>
