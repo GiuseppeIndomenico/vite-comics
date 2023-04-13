@@ -5,7 +5,7 @@
         </div>
         <ul class="d-flex align-items-center justify-content-center m-0">
             <li v-for="(link, index) in linksNav" class="p-3 d-flex align-items-center" :key="index">
-                <a class="fw-semibold" :href="link.url">{{link.title }}</a>
+                <a class="fw-semibold" :href="link.url">{{ link.title }}</a>
             </li>
 
         </ul>
@@ -105,21 +105,23 @@ ul {
     list-style: none;
 
     li {
+        cursor: pointer;
         height: 100%;
         border-bottom: 3px inset transparent;
-        
+        transition: all .25s;
 
         &:hover {
             border-bottom: 3px inset #0d6efd;
+
             a {
                 color: #0d6efd
             }
         }
+
         a {
             text-decoration: none;
             color: black;
-         
+
         }
     }
-}
-</style>
+}</style>
