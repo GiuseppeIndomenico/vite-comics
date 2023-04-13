@@ -6,7 +6,7 @@
   </main>
   <footer>
     <section class="gi-bg"> <componentFooter1/></section>
-    <section class="bg-dark text-light"> <componentFooter2/></section>
+    <section class="gi-dark text-light"> <componentFooter2/></section>
   </footer>
 
 </template>
@@ -35,6 +35,10 @@ import componentFooter2 from './components/componentFooter2.vue';
   background-image: url(public/img/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+};
+.gi-dark{
+  background-color: #333333;
 }
+
 
 </style>
