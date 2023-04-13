@@ -1,7 +1,7 @@
 <template>
-  <header class="bg-light">header</header>
+  <header class="bg-light"><componentHeader/></header>
   <main>
-    <section class="bg-dark"> prima section</section>
+    <section class="bg-dark"><componentMain1/></section>
     <section class="bg-primary">seconda section</section>
   </main>
   <footer>
@@ -12,8 +12,13 @@
 </template>
 
 <script>
+import componentHeader from './components/componentHeader.vue';
+import componentMain1 from './components/componentMain1.vue';
   export default {
-    
+    components:{
+      componentHeader,
+      componentMain1,
+    }
   }
 </script>
 
