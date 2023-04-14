@@ -4,10 +4,10 @@
             <img class="img-fluid" src="/img/dc-logo.png" alt="">
         </div>
         <ul class="d-flex align-items-center justify-content-center m-0">
-            <li v-for="(link, index) in linksNav" :class="{'active':link.active}" @click="setActive(index)" class="p-3 d-flex align-items-center" :key="index">
+            <li v-for="(link, index) in linksNav" :class="{ 'active': link.active }" @click="setActive(index)"
+                class="p-3 d-flex align-items-center" :key="index">
                 <a class="fw-semibold" :href="link.url">{{ link.title }}</a>
             </li>
-
         </ul>
     </nav>
 
@@ -91,33 +91,37 @@ export default {
             ]
         }
     },
-    methods:{
+    methods: {
         setActive(index) {
-        this.linksNav.forEach((link, i)=>{
-            if (i === index) {
-          link.active = true;
-        } else {
-          link.active = false;
-        }
-      });
-                  
-    }
+            this.linksNav.forEach((link, i) => {
+                if (i === index) {
+                    link.active = true;
+                } else {
+                    link.active = false;
+                }
+            });
 
-}}
+        }
+
+    }
+}
 </script>
 
 <style lang="scss" scoped>
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 20px;
 }
-.active{
+
+
+
+.active {
     border-bottom: 3px inset #0d6efd;
 
-a{
-    color: #0d6efd
-}
+    a {
+        color: #0d6efd
+    }
 }
 
 ul {
@@ -143,4 +147,5 @@ ul {
 
         }
     }
-}</style>
+}
+</style>

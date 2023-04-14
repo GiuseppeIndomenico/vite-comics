@@ -1,14 +1,17 @@
 <template>
-  <header class="bg-light">
+  <header class="bg-light position-relative">
     <componentHeader />
+    <div class="jumbo">
+      <img src="public\img\jumbotron.jpg" alt="jumbo">
+    </div>
+    <span class="text-bg-primary py-2 px-4 fw-semibold gi-pos">CURRENT SERIES</span>
   </header>
   <main>
     <section class="bg-dark">
       <div class="container py-4">
-
         <div class="row">
           <div v-for="(comic, index) in comics" :key="index" class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <componentMain1 :price="comic.price" :thumb="comic.thumb" :type="comic.type" :series="comic.series"/>
+            <componentMain1 :price="comic.price" :thumb="comic.thumb" :type="comic.type" :series="comic.series" />
           </div>
 
         </div>
@@ -136,5 +139,26 @@ export default {
 
 .gi-dark {
   background-color: #333333;
+}
+
+;
+
+.jumbo {
+  width: 100%;
+  height: 400px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 100% 0%;
+    }
+
+
+};
+.gi-pos{
+position: absolute;
+left: 312px;
+bottom: -20px;
+font-size: 20px;
 }
 </style>
