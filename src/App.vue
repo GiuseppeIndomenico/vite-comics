@@ -8,7 +8,7 @@
 
         <div class="row">
           <div v-for="(comic, index) in comics" :key="index" class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <componentMain1 :thumb="comic.thumb" :type="comic.type" :series="comic.series"/>
+            <componentMain1 :price="comic.price" :thumb="comic.thumb" :type="comic.type" :series="comic.series"/>
           </div>
 
         </div>

@@ -3,17 +3,27 @@
         <div class="gi-img mb-2">
             <img :src="thumb" :alt="type">
         </div>
-        <h6 class="text-light text-center">{{ series }}</h6>
-        
+        <div class="">
+            <div class="row">
+            <div class="col-8">
+                <span class="text-light ">{{ series }}</span>
+
+                </div>
+                     <div class="col-4">
+                <span class="text-light">{{ price }}</span>
+                     </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
     props: {
-        thumb: 'string',
-        series: 'string',
-        type: 'string'
+        thumb:String,
+        series:String,
+        type: String,
+        price:String
     }
 }
 </script>
@@ -22,12 +32,19 @@ export default {
 .gi-img {
     width: 200px;
     height: 200px;
+    scale: 0.9;
+    transition: all .5s;
+    &:hover{
+        scale: 1.1;
+    }
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
-
+        object-fit: cover;
     }
+}
+p{
+    font-size: 10px;
 }
 </style>
