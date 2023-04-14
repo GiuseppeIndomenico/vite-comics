@@ -52,6 +52,12 @@ button {
     border: 2px solid #0d6efd;
     padding: 10px;
     font-size: 1rem;
+    transition: all .25s;
+    &:hover{
+       color: #0d6efd; 
+       background-color: white;
+       border: 2px solid white;
+    }
 }
 .img-social {
   width: 50px;
