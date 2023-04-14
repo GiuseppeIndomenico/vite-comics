@@ -2,7 +2,7 @@
   <div class="container text-light d-flex align-items-center justify-content-between p-4">
     <div v-for="(option, index) in optionlinks" :key="index" class="d-flex align-items-center">
       <div class="img-option">
-        <img class="img-fluid d-block" :src="'public/img/' + option.path" :alt="option.alt">
+        <img class="" :src="'public/img/' + option.path" :alt="option.alt">
       </div>
       <span class="text-uppercase">{{ option.description }}</span>
     </div>
@@ -52,5 +52,11 @@ export default {
   width: 50px;
   height: 50px;
   margin: 10px;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 </style>
