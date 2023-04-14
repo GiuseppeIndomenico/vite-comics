@@ -6,7 +6,7 @@
             <h5 class="text-primary me-3">FOLLOW US</h5>
             <div v-for="(social, index) in socials" :key="index">
                 <div class="img-social">
-                    <img class="" :src="'public/img/' + social.path" :alt="social.alt">
+                    <img class="" :src="'/img/' + social.path" :alt="social.alt">
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
   <div class="container text-light d-flex align-items-center justify-content-between p-4">
     <div v-for="(option, index) in optionlinks" :key="index" class="d-flex align-items-center">
       <div class="img-option">
-        <img class="" :src="'public/img/' + option.path" :alt="option.alt">
+        <img class="" :src="'/img/' + option.path" :alt="option.alt">
       </div>
       <span class="text-uppercase">{{ option.description }}</span>
     </div>

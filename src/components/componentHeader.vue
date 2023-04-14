@@ -1,7 +1,7 @@
 <template>
-    <div class="container d-flex justify-content-between">
+    <nav class="container d-flex justify-content-between">
         <div class="logo">
-            <img class="img-fluid" src="public/img/dc-logo.png" alt="">
+            <img class="img-fluid" src="/img/dc-logo.png" alt="">
         </div>
         <ul class="d-flex align-items-center justify-content-center m-0">
             <li v-for="(link, index) in linksNav" :class="{'active':link.active}" @click="setActive(index)" class="p-3 d-flex align-items-center" :key="index">
@@ -9,7 +9,8 @@
             </li>
 
         </ul>
-    </div>
+    </nav>
+
 </template>
 
 <script>
