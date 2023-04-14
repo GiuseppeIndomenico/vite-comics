@@ -2,7 +2,7 @@
   <header class="bg-light position-relative">
     <componentHeader />
     <div class="jumbo">
-      <img src="public\img\jumbotron.jpg" alt="jumbo">
+      <img src="\img\jumbotron.jpg" alt="jumbo">
     </div>
     <span class="text-bg-primary py-2 px-4 fw-semibold gi-pos">CURRENT SERIES</span>
   </header>
