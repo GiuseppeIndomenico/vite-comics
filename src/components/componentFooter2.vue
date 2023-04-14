@@ -6,7 +6,7 @@
             <h5 class="text-primary me-3">FOLLOW US</h5>
             <div v-for="(social, index) in socials" :key="index">
                 <div class="img-social">
-                    <img class="img-fluid d-block" :src="'public/img/' + social.path" :alt="social.alt">
+                    <img class="" :src="'public/img/' + social.path" :alt="social.alt">
                 </div>
             </div>
         </div>
@@ -63,5 +63,17 @@ button {
   width: 50px;
   height: 50px;
   margin: 5px;
+
+    &:hover img{
+        scale: 1;
+    }
+
+    img{
+        scale:0.8;
+        transition: all .5s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
 </style>
